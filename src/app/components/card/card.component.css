@@ -1,0 +1,94 @@
+
+.container{
+  background-color: var(--card-container);
+  width: 250px;
+  height: 380px;
+  padding: 20px;
+  color: white;
+  box-shadow: -2px 6px 48px -1px rgba(0,0,0,0.58);
+}
+
+.title{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+
+}
+
+.card{
+  display: flex;
+  background-color: var(--innerCard);
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  border-radius: 20px;
+}
+
+img{
+  width: 200px;
+}
+
+.container-type{
+  margin-top: 25px;
+}
+
+span{
+  display: flex;
+  justify-content: center
+}
+
+span>p{
+  margin-right: 5px;
+  width: min-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.container-input{
+  padding: 20px;
+  width: min-content;
+  background-color: #616161;
+  display: flex;
+  align-items: center;
+  gap: 10px
+
+  }
+
+  .container-input > input{
+    height: 30px;
+    padding: 20px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: -2px 6px 48px -1px rgba(0,0,0,0.58);
+
+  }
+
+  section{
+    background-color: #616161;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    gap: 20px;
+    padding-top: 50px;
+  }
+
+  button{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.8s ease-in-out;
+    top:0px
+  }
+
+  button:hover{
+    background-color: #ffffff;
+    box-shadow: -5px 12px 25px -5px rgba(0,0,0,0.75);
+    top:-5px
+  }

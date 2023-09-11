@@ -1,1 +1,22 @@
-<p>card works!</p>
+<section>
+  <div class="container-input">
+    <input type="text" name="" id="" placeholder="Pokemon Name" [(ngModel)]="value">
+    <button (click)="search(value)">Search</button>
+  </div>
+
+<div class="container">
+  <div class="title">
+  <h2 class="name">{{name}}</h2>
+  <p>{{id}}</p>
+  </div>
+
+  <div class="card">
+    <img [src]="imgSrc" alt="" srcset="">
+  </div>
+
+  <div class="container-type"></div>
+  <span class="type">
+    <p *ngFor="let y of type" [className]="y">{{y}}</p>
+  </span>
+</div>
+</section>
