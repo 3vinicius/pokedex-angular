@@ -8,10 +8,36 @@ import { Observable } from 'rxjs';
   Assim é necessário tipar tudo.
 */
 interface Pokemon {
+  height:string,
+  weight:string,
   name: string;
   id: string;
   sprites: { front_default: string };
   types: Array<{type:{name:string}}>;
+  abilities:[{
+    ability:{
+      name:string
+    }
+  }];
+  stats: [{
+    base_stat:string;
+  },
+  {
+    base_stat:string;
+  },
+  {
+    base_stat:string;
+  },
+  {
+    base_stat:string;
+  },
+  {
+    base_stat:string;
+  },
+  {
+    base_stat:string;
+  }
+]
 }
 
 interface NamesPokemon {
@@ -46,7 +72,6 @@ export class PokemonService {
 
   getPokemonNames():Observable<NamesPokemon> {
     this.listNames = this.http.get<NamesPokemon>(`${this.baseUrl}?limit=100&offset=0`)
-    console.log(this.listNames)
     return this.listNames
   }
 }

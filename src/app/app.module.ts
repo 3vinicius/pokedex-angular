@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { FormsModule } from '@angular/forms';
 import { NamesComponent } from './components/names/names.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    NamesComponent
+    NamesComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

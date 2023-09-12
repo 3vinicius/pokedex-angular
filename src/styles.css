@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+body{
+  background-color: var(--innerCard);
+}
+
 
 :root{
 	--card-container: #232323;

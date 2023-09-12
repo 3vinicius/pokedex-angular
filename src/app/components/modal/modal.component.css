@@ -1,0 +1,72 @@
+.modal {
+  height: 100%;
+  width: 100vw;
+}
+
+.progress-bar {
+  --progress: 0;
+  height: 5px;
+  /* padding: 2px; */
+  display: flex;
+  width: 50%;
+  border-radius: 20px;
+}
+
+h3{
+  text-align: center;
+}
+
+
+.progress-bar::before {
+  content: "";
+  width: calc(var(--progress) * 1%);
+  background-color: hsl(calc(var(--progress) * 1.2), 80%, 50%);
+  border-radius: 10px;
+  height: 10px;
+}
+
+.stats {
+  border-radius: 0.625rem;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 30px;
+  margin-top: -20px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stats .infoStats {
+  justify-content: space-evenly;
+}
+
+.stats p {
+  padding: 0.25rem 0;
+  font-size: 0.525rem;
+  margin: 0px;
+  /* width: 60px; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+.stats ol {
+  width: 100%;
+  margin: 10px;
+  padding: 0px 0px 0px 5px;
+}
+.stats h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  font-size: 50px;
+  padding: 5px;
+  font-weight: 900;
+}

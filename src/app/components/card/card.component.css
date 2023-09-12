@@ -92,3 +92,7 @@ span>p{
     box-shadow: -5px 12px 25px -5px rgba(0,0,0,0.75);
     top:-5px
   }
+
+app-modal{
+  background-color: var(--innerCard);
+}
