@@ -14,6 +14,10 @@ interface Pokemon {
   types: Array<{type:{name:string}}>;
 }
 
+interface NamesPokemon {
+  results: Array<{name:string}>
+}
+
 /* Isso é uma construção de injeção de dependencias, assim ele é passado dentro do construtor do component */
 @Injectable({
   /* Significa que ele está servindo a arvore inteira */
@@ -22,6 +26,7 @@ interface Pokemon {
 export class PokemonService {
   private baseUrl: string = '';
   private pokeData: any | Pokemon = '';
+  private listNames: any = '';
 
   /* Injetando dependencias do httpCliente */
   constructor(private http: HttpClient) {
@@ -37,5 +42,11 @@ export class PokemonService {
     /* Fazendo uma requisição get com o httpClient */
     this.pokeData = this.http.get<Pokemon>(`${this.baseUrl}${pokemonName}`);
     return this.pokeData;
+  }
+
+  getPokemonNames():Observable<NamesPokemon> {
+    this.listNames = this.http.get<NamesPokemon>(`${this.baseUrl}?limit=100&offset=0`)
+    console.log(this.listNames)
+    return this.listNames
   }
 }

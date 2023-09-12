@@ -1,0 +1,17 @@
+@font-face{
+  font-family: 'joistix';
+  src: url('../../../assets/fonts/joystix monospace.otf') format('opentype');
+}
+
+marquee{
+  font-family: 'joistix';
+  height: min-content;
+  background-color: var(--innerCard);
+  color: white;
+  width: 100%;
+  padding: 5px;
+}
+
+div{
+  height: 0.01px;
+}
