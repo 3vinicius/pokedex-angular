@@ -1,15 +1,19 @@
 
 .container{
   background-color: var(--card-container);
-  width: 250px;
-  height: 380px;
-  padding: 20px;
-  color: white;
-  box-shadow: -2px 6px 48px -1px rgba(0,0,0,0.58);
+    width: 318px;
+    /* height: 453px; */
+    padding: 20px;
+    color: white;
+    box-shadow: -2px 6px 48px -1px rgba(0,0,0,0.58);
+    /* padding-bottom: 40px; */
+    margin-bottom: -57px;
+    z-index: 20;
 }
 
 .title{
   display: flex;
+  font-size: 25px;
   text-align: center;
   align-items: center;
   justify-content: space-around;
@@ -22,12 +26,12 @@
   background-color: var(--innerCard);
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 350px;
   border-radius: 20px;
 }
 
 img{
-  width: 200px;
+  width: 400px;
 }
 
 .container-type{
@@ -44,6 +48,7 @@ span>p{
   width: min-content;
   padding: 5px 10px;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .container-input{
@@ -96,3 +101,4 @@ span>p{
 app-modal{
   background-color: var(--innerCard);
 }
+

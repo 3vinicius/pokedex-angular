@@ -1,3 +1,10 @@
+@font-face{
+  font-family: 'joistix';
+  src: url('../../../assets/fonts/joystix monospace.otf') format('opentype');
+}
+
+
+
 .modal {
   height: 100%;
   width: 100vw;
@@ -20,7 +27,7 @@ h3{
 .progress-bar::before {
   content: "";
   width: calc(var(--progress) * 1%);
-  background-color: hsl(calc(var(--progress) * 1.2), 80%, 50%);
+  background-color: hsl(calc(var(--progress) * 5.5), 80%, 50%);
   border-radius: 10px;
   height: 10px;
 }
@@ -35,18 +42,32 @@ h3{
   justify-content: space-around;
   padding: 20px;
   padding-top: 30px;
-  margin-top: -20px;
-}
-
-.stats li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  margin-top: 0px;
 }
 
 .stats .infoStats {
-  justify-content: space-evenly;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats .infoAbout{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.container-infoAbout{
+  width: 80%;
+}
+
+
+
+.container-infoStats{
+  width: 80%;
 }
 
 .stats p {
@@ -55,18 +76,49 @@ h3{
   margin: 0px;
   /* width: 60px; */
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+
 }
 
 .stats ol {
   width: 100%;
   margin: 10px;
   padding: 0px 0px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .stats h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'joistix',"Montserrat", sans-serif;
   margin: 0px;
   font-size: 50px;
   padding: 5px;
   font-weight: 900;
 }
+
+
+.infoAbout p:first-child{
+  font-size: 15px;
+  font-family: 'joistix',"Montserrat", sans-serif;
+  font-weight:100 ;
+}
+
+
+.infoAbout p:nth-child(n+2){
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:100 ;
+  text-align: end;
+}
+
+.infoStats p{
+  font-size: 15px;
+  font-family: 'joistix',"Montserrat", sans-serif;
+  font-weight:100 ;
+}
+
+@media only screen and (min-width: 600px){
+  .modal{
+    width: 100%;
+  }
+}
+

@@ -2,6 +2,7 @@
   <div class="stats">
     <ol>
       <h3>About</h3>
+      <div class="container-infoAbout">
       <li class="infoAbout">
         <p>Height</p>
         <p>{{pokemon.about.height}}</p>
@@ -16,51 +17,54 @@
 pokemon.about.abilities[1]
         }}</p>
       </li>
+    </div>
     </ol>
     <ol>
       <h3>Base Stats</h3>
-      <li>
-        <p calss="infoStats">HP</p>
+      <div class="container-infoStats">
+      <li class="infoStats">
+        <p>HP</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.hp
         "></span>
       </li>
-      <li>
+      <li class="infoStats">
         <p>Attack</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.att
         "></span>
       </li>
-      <li>
+      <li class="infoStats">
         <p>Defense</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.def
         "></span>
       </li>
-      <li>
+      <li class="infoStats">
         <p>Sp. Atk</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.spAttack
         "></span>
       </li>
-      <li>
+      <li class="infoStats">
         <p>Sp. Def</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.spDef
         "></span>
       </li>
-      <li>
+      <li class="infoStats">
         <p>Speed</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.speed
         "></span>
       </li>
-      <li>
+      <li class="infoStats">
         <p>Total</p>
         <span class="progress-bar" [style.--progress]="
           pokemon.stats.total
         "></span>
       </li>
+    </div>
     </ol>
   </div>
 </div>
