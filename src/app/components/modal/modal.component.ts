@@ -13,6 +13,9 @@ export class ModalComponent implements DoCheck {
   @Input()
   pokemon:pokemonAsides | any = ''
 
+  @Input()
+  click:Boolean = false
+
 
   constructor(private service:PokemonService) {
     service.getPokemon

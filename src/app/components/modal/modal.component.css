@@ -8,7 +8,10 @@
 .modal {
   height: 100%;
   width: 100vw;
+  transition: 2s ease-in-out;
 }
+
+
 
 .progress-bar {
   --progress: 0;
@@ -122,3 +125,15 @@ h3{
   }
 }
 
+.visible{
+  opacity: 1;
+  max-height: 100%; /* Altura máxima para animar a entrada */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.hidden{
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden; /* Para esconder o conteúdo quando a altura é zero */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}

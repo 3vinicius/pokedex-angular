@@ -4,7 +4,7 @@
     <button (click)="search(value)">Search</button>
   </div>
 
-<div class="container">
+<div class="container" (click)="boleanValue = !boleanValue">
   <div class="title">
   <h2 class="name">{{name}}</h2>
   <p>{{id}}</p>
@@ -19,5 +19,5 @@
     <p *ngFor="let y of type" [className]="y">{{y}}</p>
   </span>
 </div>
-<app-modal [pokemon]="pokemonStates"></app-modal>
+<app-modal [pokemon]="pokemonStates"  [click]="boleanValue"></app-modal>
 </section>

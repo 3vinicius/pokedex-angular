@@ -38,6 +38,8 @@ export class CardComponent implements OnInit, OnChanges {
     },
   };
 
+  boleanValue: boolean =  false;
+
   /* Primieiro declara no construtor */
   constructor(
     private services: PokemonService,

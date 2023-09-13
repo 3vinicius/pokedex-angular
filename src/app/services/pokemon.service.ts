@@ -71,7 +71,7 @@ export class PokemonService {
   }
 
   getPokemonNames():Observable<NamesPokemon> {
-    this.listNames = this.http.get<NamesPokemon>(`${this.baseUrl}?limit=100&offset=0`)
+    this.listNames = this.http.get<NamesPokemon>(`${this.baseUrl}?limit=1000&offset=0`)
     return this.listNames
   }
 }
