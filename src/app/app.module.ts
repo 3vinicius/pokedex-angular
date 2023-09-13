@@ -8,13 +8,15 @@ import { CardComponent } from './components/card/card.component';
 import { FormsModule } from '@angular/forms';
 import { NamesComponent } from './components/names/names.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     NamesComponent,
-    ModalComponent
+    ModalComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
